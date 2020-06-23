@@ -1,0 +1,34 @@
+using System;
+using System.Collections;
+
+namespace arrayList
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList list = new ArrayList() { 12, -5, 7, 55, -127, -330, 1, -21, -78, 22};
+
+            Console.WriteLine("Числа < 0");
+            foreach (int num in list)
+            {
+                if (num < 0) Console.Write(num + " | ");
+            }
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Числа > 0");
+            foreach (int num in list)
+            {
+                if (num > 0) Console.Write(num + " | ");
+            }
+            Console.WriteLine("\n");
+
+            Console.WriteLine("Числа = 0");
+            foreach (int num in list)
+            {
+                if (num == 0) Console.Write(num + " | ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
